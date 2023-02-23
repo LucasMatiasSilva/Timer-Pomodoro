@@ -3,7 +3,7 @@ let pausa = document.getElementById('pausa')
 let sessoes = document.getElementById('sessoes')
 let segundos
 
-var siren = new Audio('./audio/siren.mp3')
+var bell = new Audio('./audi/siren.mp3')
 var volta = new Audio('./audio/volta.mp3')
 var final = new Audio('./audio/final.mp3')
 
@@ -37,7 +37,6 @@ function iniciar() {
         sessoes.focus()
     } else {
         lofi.play()
-        siren.play()
         pause.style.setProperty('display', 'block', 'important')
 
         localStorage.setItem('acao', String(acao.value))
