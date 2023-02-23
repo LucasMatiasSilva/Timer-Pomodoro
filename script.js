@@ -3,7 +3,7 @@ let pausa = document.getElementById('pausa')
 let sessoes = document.getElementById('sessoes')
 let segundos
 
-var bell = new Audio('./audi/siren.mp3')
+var siren = new Audio('./audio/siren.mp3')
 var volta = new Audio('./audio/volta.mp3')
 var final = new Audio('./audio/final.mp3')
 
@@ -91,7 +91,7 @@ function momentoAcao() {
                 clearInterval(min_interval)
                 clearInterval(seg_interval)
 
-                bell.play()
+                siren.play()
 
                 momentoPausa()
             }
